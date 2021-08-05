@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800;900&display=swap');
+
+:root {
+    --blue-color: #38B6FF;
+    --blue-opacity: 78%;
+    --brown: #ff6600;
+    --light-black: rgb(61, 61, 61);
+    --red-color: #ed1b24;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    /* showing the hamburger icon */
+    .navbar {
+        display: none;
+    }
+    .bars__icon__container {
+        display: flex;
+    }
+    .bars__icon  {
+        color: var(--red-color);
+        font-size: 25px;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    .navbar__and__profile__cart {
+        width: 250px;
+    }
+    /* making the home responsive */
+    .home {
+        width: 100%;
+    }
+    .food__tray__img {
+        height: 400px;
+    }
+    .home__content {
+        width: 254px;
+        padding-top: 30px;
+    }
+    html {
+        font-size: 60%;
+    }
+    /* navbar for hamburger icon */
+    .hamburger__navbar__active {
+        display: block;
+        width: 100%;
+        min-height: calc(100vh - 80px);
+        position: absolute;
+        left: 0;
+        background-color: var(--brown);
+        animation: leftToRight 0.7s;
+        
+        
+    }
+    .hamburger__navbar__active ul {
+        font-family: poppins;
+        font-weight: 800;
+        display: flex;
+        width: 100%;
+        min-height: calc(100vh - 80px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+
+    }
+    .hamburger__navbar__active ul li a {
+        font-size: 25px;
+        color: white;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+    .hamburger__navbar__active ul li a:hover {
+        color: var(--light-black);
+    }
+    @keyframes leftToRight {
+        from {
+            left: -100vw;
+        }
+        to {
+            left: 0;
+        }
+    }
+
+}
+@media only screen and (max-width: 796px) {
+    /* making the home responsive */
+    .home div {
+        margin: 20px;
+    }
+    .food__tray__img {
+        height: 300px;
+    }
+    .home__content {
+        padding-top: 0;
+    }
+}
+@media only screen and (max-width: 796px) {
+    /* removing the food tray image */
+    .food__tray__img {
+        display: none;
+    }
+    /* making the home responsive */
+    .home div {
+        margin: 0;
+    }
+    .home__content {
+        text-align: center;
+        padding-top: 40px;
+
+    }
+    .home__info {
+        text-align: center;
+    }
+    /* cart and navbar */
+    .navbar__and__profile__cart {
+        width: 200px;
+    }
+    .cart__option__container .cart__price {
+        margin-right: 10px;
+
+    }
+    .logo__container {
+        width: 50px;
+        height: 50px;
+        margin-left: 20px;
+    }
+}

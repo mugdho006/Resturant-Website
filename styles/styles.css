@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --blue-color: #38B6FF;
+    --blue-opacity: 78%;
+    --brown: #ff6600;
+    --light-black: rgb(61, 61, 61);
+    --red-color: #ed1b24;
+}
+header {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo__container { 
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+.logo__img {
+    height: 100%;
+    width: 100%;
+}
+.bars__icon__container {
+    display: none;
+}
+.navbar {
+    display: flex;
+    margin-right: 50px;
+}
+.navbar ul {
+    display: flex;
+}
+.navbar ul li a {
+    font-family: poppins;
+    padding: 20px;
+    transition: 0.4s all;
+    color: black;
+    
+}
+.navbar ul li a:hover {
+    color: red;
+}
+.navbar__and__profile__cart {
+    width: 622px;
+    display: flex;
+    align-items: center;
+    
+}
+.profile__cart__img__container {
+    display: flex;
+    align-items: center;
+}
+.profile__icon__container {
+    margin-right: 20px;
+}
+.profile__icon {
+    font-size: 25px;
+    color: var(--brown);
+    cursor: pointer;
+}
+.cart__option__container {
+    display: flex;
+    align-items: center;
+}
+.cart__option__container  .cart__icon {
+    font-size: 25px;
+    margin-right: 20px;
+    color: var(--brown);
+    cursor: pointer;
+}
+
+.cart__option__container .cart__price{
+    margin-right: 50px;
+    font-family: "Poppins";
+    font-size: 15px;
+}
+
+/* HOME */
+.home {
+    display: flex;
+    width: 1024px;
+    margin: auto;
+    justify-content: center;
+}
+.home div {
+    margin: 50px;
+}
+.food__tray__img {
+    height: 480px;
+}
+.home__content {
+    padding-top: 15px;
+    font-family: poppins;
+    color: var(--light-black);
+    
+}
+.home__heading {
+    font-size: 3rem;
+}
+.home__heading {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.home__heading .big-text {
+    font-size: 5rem;
+    font-family: poppins;
+    font-weight: 800;
+    color: var(--brown);
+}
+.home__info {
+    font-size: 0.8rem;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+.order__now__btn {
+    padding: 12px 25px;
+    background-color: var(--red-color);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    box-shadow: 2px 2px 15px 10px rgba(0, 0, 0, 0.131);
+    cursor: pointer;
+    transition: 0.4s;
+}
+.order__now__btn:hover {
+    color: var(--light-black);
+
+}
+
+
+
+/* hamburger navbar */
+.hamburger__navbar {
+    display: none;
+}
+
+
+
+
+
+
+
+
+/* Universal */
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+
+/*==== UTILITY CLASS ====*/
+.flex {
+    display: flex;
+}
